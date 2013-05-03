@@ -27,6 +27,9 @@ sys.mem.max_hidden_apps=10
 
 #NFC
 ro.nfc.port=I2C
+ro.config.nfc.card_setting=false
+ro.config.hw_accesscontrol=true
+ro.config.hw_smartcardservice=true
 
 # Qualcomm
 com.qc.hardware=true
