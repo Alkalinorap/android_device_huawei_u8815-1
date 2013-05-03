@@ -25,6 +25,9 @@ ro.confg.hw_appversion=U8815VCM9_KERNEL
 # Memory
 sys.mem.max_hidden_apps=10
 
+#NFC
+ro.nfc.port=I2C
+
 # Qualcomm
 com.qc.hardware=true
 debug.composition.7x27A.type=mdp
