@@ -37,10 +37,10 @@ on init
     symlink /mnt/emmc /emmc
     symlink /mnt/emmc /HWUserData
 
-# NFC
-     chmod 0666 /dev/pn544
-     chown nfc nfc /dev/pn544
-     setprop ro.nfc.port I2C
+    # NFC
+    chmod 0666 /dev/pn544
+    chown nfc nfc /dev/pn544
+    setprop ro.nfc.port I2C
 
 on boot
     chown bluetooth bluetooth /sys/module/bluetooth_power/parameters/power

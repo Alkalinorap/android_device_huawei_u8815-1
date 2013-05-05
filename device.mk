@@ -23,7 +23,7 @@ PRODUCT_PACKAGES += \
     libmm-omxcore \
     libOmxCore
 
-# NFC packages
+# NFC
 PRODUCT_PACKAGES += \
     libnfc \
     libnfc_jni \
@@ -79,8 +79,8 @@ PRODUCT_COPY_FILES += \
     device/huawei/u8815/configs/AudioFilter.csv:system/etc/AudioFilter.csv \
     device/huawei/u8815/configs/AutoVolumeControl.txt:system/etc/AutoVolumeControl.txt \
     device/huawei/u8815/configs/media_profiles.xml:system/etc/media_profiles.xml \
-    device/huawei/u8815/configs/libcm.sh:system/etc/libcm.sh \
     device/huawei/u8815/configs/nfcee_access.xml:system/etc/nfcee_access.xml \
+    device/huawei/u8815/configs/libcm.sh:system/etc/libcm.sh \
     device/huawei/u8815/configs/vold.fstab:system/etc/vold.fstab
 
 PRODUCT_COPY_FILES += \

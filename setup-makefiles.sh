@@ -63,13 +63,6 @@ PRODUCT_PACKAGES := \\
 PRODUCT_COPY_FILES := \\
     packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:/system/etc/permissions/android.software.live_wallpaper.xml
 
-# NFC
-PRODUCT_COPY_FILES += \\
-    vendor/$VENDOR/$DEVICE/proprietary/lib/libnfc.so:system/lib/libnfc.so \\
-    vendor/$VENDOR/$DEVICE/proprietary/lib/libnfc_jni.so:system/lib/libnfc_jni.so \\
-    vendor/$VENDOR/$DEVICE/proprietary/lib/libnfc_ndef.so:system/lib/libnfc_ndef.so \\
-    vendor/$VENDOR/$DEVICE/proprietary/lib/hw/nfc.huawei.so:system/lib/hw/nfc.huawei.so
-
 # Pick up overlay for features that depend on non-open-source files
 DEVICE_PACKAGE_OVERLAYS := vendor/$VENDOR/$DEVICE/overlay
 
