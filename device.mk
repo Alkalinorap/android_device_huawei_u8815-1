@@ -4,6 +4,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, device/common/gps/gps_eu_supl.mk)
 
 $(call inherit-product, vendor/huawei/u8815/u8815-vendor.mk)
+	
+# Inherit nfc-enhaced
+$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 
 FRAMEWORKS_BASE_SUBDIRS += ../../$(LOCAL_PATH)/ril/
 
@@ -28,8 +31,9 @@ PRODUCT_PACKAGES += \
     libnfc \
     libnfc_jni \
     Nfc \
-    Tag
-
+    Tag \
+    com.android.nfc_extras 
+ 
 # Graphics
 PRODUCT_PACKAGES += \
     copybit.msm7x27a \
