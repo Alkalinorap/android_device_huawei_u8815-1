@@ -4,7 +4,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, device/common/gps/gps_eu_supl.mk)
 
 $(call inherit-product, vendor/huawei/u8815/u8815-vendor.mk)
-	
+
 # Inherit nfc-enhaced
 $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 
@@ -33,7 +33,7 @@ PRODUCT_PACKAGES += \
     Nfc \
     Tag \
     com.android.nfc_extras 
- 
+
 # Graphics
 PRODUCT_PACKAGES += \
     copybit.msm7x27a \
@@ -104,6 +104,7 @@ PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/android.hardware.camera.flash-autofocus.xml:system/etc/permissions/android.hardware.camera.flash-autofocus.xml \
     frameworks/base/data/etc/android.hardware.location.gps.xml:system/etc/permissions/android.hardware.location.gps.xml \
     frameworks/base/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
+    frameworks/base/nfc-extras/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
     frameworks/base/data/etc/android.hardware.sensor.accelerometer.xml:system/etc/permissions/android.hardware.sensor.accelerometer.xml \
     frameworks/base/data/etc/android.hardware.sensor.compass.xml:system/etc/permissions/android.hardware.sensor.compass.xml \
     frameworks/base/data/etc/android.hardware.sensor.proximity.xml:system/etc/permissions/android.hardware.sensor.proximity.xml \
